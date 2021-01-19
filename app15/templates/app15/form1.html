@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Person Entry Form</h1>
+    <form action="receive_form" method="post">
+        {% csrf_token %}
+        {{ form1.as_p }}
+        <input type="submit" value="SEND">
+    </form>
+</body>
+</html>

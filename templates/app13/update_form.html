@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <style>
+        .row{
+            width: 50%;
+            height: auto;
+            margin-left: 450px;
+            text-align: center;
+        }
+        form{
+            width: 30%;
+            height: 20px;
+            text-align: center;
+            margin-left: 400px;
+        }
+        input{
+            width: 40%;
+            height: 30px;
+            border-color: darkred;
+            text-align: center;
+            font-size: 18px;
+         }
+        #submit{
+            width: 15%;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+<h2>UPDATE FORM</h2>
+    <hr/>
+</div>
+<form method="get" action="receive_update">
+    <p>ID: <input type="text" id="id" name="txt_id" value="{{person.id}}"></p><br/>
+    <p>Name: <input type="text" id="name" name="txt_name" value="{{person.full_name}}"></p><br/>
+    <p>Address: <input type="text" id="address" name="txt_address" value="{{person.contact_address}}"></p><br/>
+    <input type="submit" id="submit" value="Update">
+    <br/>
+    <hr/>
+<a href="/"><h3>BACK TO HOME</h3></a>
+</form>
+
+</body>
+</html>

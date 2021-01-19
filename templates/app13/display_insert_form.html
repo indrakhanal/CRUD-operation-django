@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert Form</title>
+    <style>
+        .row{
+            width: 30%;
+            height: auto;
+            margin-left: 400px;
+            text-align: center;
+        }
+        form{
+            width: 30%;
+            height: auto;
+            margin-left: 500px;
+
+        }
+        a{
+            margin-left: 400px;
+        }
+        input{
+            border-color: darkred;
+            width: 50%;
+            height: 30px;
+        }
+        #submit{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+<h2>INSERT DATA INTO DATABASE</h2>
+    <hr/>
+</div>
+<br/>
+<form method="get", action="insert">
+    <p><input type="text" name="txt_id" id="id" placeholder="Enter Unique Id"></p><br/>
+    <p><input type="text" name="txt_name" id="name" placeholder="Enter Your Name"></p><br/>
+    <p><input type="text" name="txt_address" id="address" placeholder="Enter Your Address"></p><br/>
+    <input type="submit"  id="submit" value="Save">
+
+</form>
+ <br/><hr/><br/>
+<a href="/"><button type="button" value="BACK">Back Home</button></a>
+</body>
+</html>

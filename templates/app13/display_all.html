@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>all persons</title>
+    <style>
+        .row{
+            margin-left: 500px;
+            width: 50%;
+            height: auto;
+            text-align: center;
+        }
+        table{
+           margin-left: 500px;
+            width: 50%;
+            height: auto;
+            text-align: center;
+        }
+        a{
+            margin-left: 500px;
+        }
+        table, li, th{
+            height: 40px;
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+         table, li, th, td{
+            height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="row">
+<h1>Display All Persons</h1>
+    <hr/>
+</div>
+<br/><br/>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+    </tr>
+     {% for person in person%}
+    <tr>
+        <td>{{person.id}}</td>
+        <td>{{person.full_name}}</td>
+        <td>{{person.contact_address}}</td>
+    </tr>
+    {%endfor%}
+</table>
+<br/><br/>
+<hr/>
+<a href="/"><button type="button">BACK TO HOME</button></a>
+</body>
+</html>

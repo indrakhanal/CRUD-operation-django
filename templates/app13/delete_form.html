@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+    <style>
+        .row{
+            width: 50%;
+            height: auto;
+            text-align: center;
+            margin-left: 500px;
+        }
+        input{
+            width: 30%;
+            height: 25px;
+            text-align: center;
+        }
+        #submit{
+            width: 10%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+    <h2>DELETE ALL THE DATA FROM DATABASE</h2>
+    <br/>
+    <hr/><br/>
+<form method="get" action="delete">
+    <p>ID: <input type="hidden" name="txt_id1" value="{{person.id}}" > hidden</p>
+    <p>Name: <input type="text" name="txt_name1" value="{{person.full_name}}" disabled></p>
+    <p>Address: <input type="text" name="txt_address1" value="{{person.contact_address}}" disabled></p>
+    <input type="submit" id="submit" value="Delete">
+</form>
+    <br/><br/>
+    <hr/>
+    <a href="/"><h4>Back Home</h4></a>
+</div>
+
+</body>
+</html>

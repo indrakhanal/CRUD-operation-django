@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Movie Entry Form</title>
+</head>
+<body>
+<h3>New News Entry Form</h3>
+<form action="" method="post">
+    {% csrf_token %}
+    {% include 'app16/form_template.html' %}
+    <input type="submit" value="SAVE">
+</form>
+</body>
+</html>

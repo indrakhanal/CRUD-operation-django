@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>value from database</title>
+</head>
+<body>
+<h3><u>Your Personal Information</u></h3>
+{%if person%}
+<p>ID:{{person.id}}</p>
+<p>Name:{{person.full_name}}</p>
+<p>Address:{{person.contact_address}}</p>
+{%else%}
+<p>{{error}}</p>
+{%endif%}
+</body>
+</html>
